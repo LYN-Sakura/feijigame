@@ -1,0 +1,21 @@
+/* 显示 */
+@keyframes xs{
+	0%{opacity: 0;}
+	50%{opacity: 0.5;}
+	100%{opacity: 1;}
+}
+/* 显示--移动  1 ↑ */
+@keyframes xy1{
+	from{top: 600px;left: 200px;opacity: 0;}
+	to{top: 350px ;left: 200px;opacity: 1;}
+}
+/* 左移 1 ← */
+@keyframes zy1{
+	from{margin-left: 300px;}
+	to{margin-left: 0;}
+}
+/* 显示--移动 2 ↓ */
+@keyframes xy2{
+	from{top:-22px;opacity: 0;}
+	to{top:0;opacity: 1;}
+}

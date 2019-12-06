@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>飞机大战</title>
+		<!-- css文件 -->
+		<link rel="icon" href="img/logo.ico">
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<!-- 大框 -->
+		<div id="dakuang">
+			<!--游戏开始按钮  -->
+			<div id="yxks">游戏开始</div>
+			<!-- 游戏说明 -->
+			<ol id="yxsm">
+				游戏说明:
+				<p>&nbsp;</p>
+				<li>W S 上 下</li>
+				<li>A D 左 右</li>
+				<li>空格 发射子弹</li>
+				<li>撞击减少5能量</li>
+				<li>随时间减少能量</li>
+				<li>拾取能量块加能量</li>
+			</ol>
+			<!-- 排行榜 -->
+			<ul id="phb">
+				排行榜:
+				<p>&nbsp;</p>
+				<li><i>NO1.</i>常山赵子龙</li>
+				<li><i>NO2.</i>武汉小太妹</li>
+				<li><i>NO3.</i>空白</li>
+				<li><i>NO4.</i>苍天有泪井有空</li>
+				<li><i>NO5.</i>菠萝野结衣</li>
+			</ul>
+			<!-- 游戏计数 -->
+			<div id="yxjs">
+				<!-- 能量 -->
+				<div id="nl">能量: <span class="nl">10</span></div>
+
+				<!-- 游戏得分 -->
+				<div id="fs">分数:<span class="fs">0</span></div>
+
+				<!-- 游戏生存时间 -->
+				<div id="scsj">生存时间: <span class="scsj">0</span>秒</div>
+			</div>
+			<!-- 游戏结束,从新开始 -->
+			<div id="youxijs">
+				<div>得分: <span class="fs">0</span>分</div>
+				<div id="cxks">重新开始</div>
+			</div>
+			<canvas id="canvas"></canvas>
+			<audio src="sound/shoot.mp3"  id="shoot" >
+				当前浏览器不支持audio
+			</audio>
+			<audio src="sound/hit.mp3" id="hit" >
+				当前浏览器不支持audio
+			</audio>
+		</div>
+
+		<div class="buff">
+			<button class="zjdr">增加敌人</button>
+			<button class="zjnl">增加能量</button>
+		</div>
+		<!-- js文件 -->
+		<script src="js/star.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+</html>
