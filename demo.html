@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			#canvas {
+				background-color: #909090;
+			}
+		</style>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="700" height="700"></canvas>
+	</body>
+	<script>
+		const canvas = document.querySelector('#canvas')
+		//返回一个用于在画布上绘图的环境
+		const context = canvas.getContext('2d')
+		context.lineWidth = 5;
+		context.fillStyle = '#005588';
+		context.strokeRect(20, 20, 150, 100);
+		context.stroke();
+	</script>
+
+</html>

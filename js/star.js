@@ -12,8 +12,6 @@ var shoot  = document.querySelector('#shoot');
 var zjdr = document.querySelector('.zjdr');
 var zjnl = document.querySelector('.zjnl');
 
-
-
 var canvas = document.querySelector("#canvas");
 var context = canvas.getContext('2d');
 var cw = canvas.width = 500;
